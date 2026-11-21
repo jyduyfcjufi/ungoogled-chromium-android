@@ -66,7 +66,7 @@ runs:
       with:
         name: build-tree-${{ inputs.architecture }}
         path: build-tree.tar.zst
-        retention-days: 1
+        retention-days: 30
         overwrite: true
         compression-level: 0
 
@@ -107,6 +107,6 @@ runs:
       with:
         name: release-${{ inputs.architecture }}
         path: /mnt/ugc/releases/${{ env.UGC_VERSION }}/
-        retention-days: 14
+        retention-days: 304
         overwrite: true
         compression-level: 0
