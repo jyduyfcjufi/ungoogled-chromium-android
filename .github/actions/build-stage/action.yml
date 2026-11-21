@@ -107,6 +107,6 @@ runs:
       with:
         name: release-${{ inputs.architecture }}
         path: /mnt/ugc/releases/${{ env.UGC_VERSION }}/
-        retention-days: 304
+        retention-days: 14
         overwrite: true
         compression-level: 0
